@@ -195,3 +195,15 @@
 
 
 
+// 10. Symbol
+// Problem: Create an object with a symbol as a property key and demonstrate accessing it.
+
+// Answer
+
+// const symbolKey = Symbol('mySymbol');
+
+// const obj = {
+//   [symbolKey]: 'Hello, World!'
+// };
+
+// console.log(obj[symbolKey]); // Output: Hello, World!
