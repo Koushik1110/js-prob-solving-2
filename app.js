@@ -137,3 +137,61 @@
 // 8. New Target Operators
 // Problem: Use new.target to create an abstract class Shape that cannot be instantiated directly.
 
+// 8. New Target Operators
+//  Problem: Use new.target to create an abstract class Shape that cannot be instantiated directly.
+
+// Answer
+
+// class Shape {
+//   constructor() {
+//     if (new.target === Shape) {
+//       throw new Error("Cannot instantiate abstract class Shape directly.");
+//     }
+//   }
+
+//   // Abstract method
+//   area() {
+//     throw new Error("Method 'area()' must be implemented.");
+//   }
+// }
+
+// class Circle extends Shape {
+//   constructor(radius) {
+//     super();
+//     this.radius = radius;
+//   }
+
+//   area() {
+//     return Math.PI * this.radius * this.radius;
+//   }
+// }
+
+// class Square extends Shape {
+//   constructor(side) {
+//     super();
+//     this.side = side;
+//   }
+
+//   area() {
+//     return this.side * this.side;
+//   }
+// }
+
+
+
+
+
+// 9. Static Methods
+// Problem: Create a class MathUtil with a static method square to calculate the square of a number.
+
+// Answer
+
+// class MathUtil {
+//   static square(number) {
+//     return number * number;
+//   }
+// }
+
+
+
+
